@@ -130,19 +130,23 @@ NIconButton {
     }
 
     model.push({
-      "label": root.displayMode === "text" ? "Display: text → flag" : "Display: flag → text",
+      "label": root.displayMode === "text"
+          ? pluginApi?.tr("menu.display.text_to_flag")
+          : pluginApi?.tr("menu.display.flag_to_text"),
       "action": "toggle-display",
       "icon": "visibility"
     })
 
     model.push({
-      "label": root.middleClickAction === "previous" ? "Middle click: previous layout" : "Middle click: toggle display",
+      "label": root.middleClickAction === "previous"
+          ? pluginApi?.tr("menu.middle.previous")
+          : pluginApi?.tr("menu.middle.toggle_display"),
       "action": "toggle-middle",
       "icon": "mouse"
     })
 
     model.push({
-      "label": "Plugin settings",
+      "label": pluginApi?.tr("menu.plugin_settings"),
       "action": "plugin-settings",
       "icon": "settings"
     })

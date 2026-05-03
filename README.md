@@ -23,6 +23,12 @@ Keyboard layout indicator and switcher for Noctalia Shell on niri.
 - Native Noctalia look and feel
 
 ---
+## 🌍 Translations
+
+- English (default)
+- Russian
+
+---
 ## ⚙️ Requirements
 
 - [niri](https://github.com/YaLTeR/niri)
